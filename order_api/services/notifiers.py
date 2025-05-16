@@ -9,9 +9,9 @@ class Notifier(ABC):
 
 class EmailNotifier(Notifier):
     def send(self, message: str):
-        print(f'[EMAIL] {message}')
+        print(f"[EMAIL] {message}")
 
 
 class SMSNotifier(Notifier):
     def send(self, message: str):
-        print(f'[SMS] {message}')
+        print(f"[SMS] {message}")

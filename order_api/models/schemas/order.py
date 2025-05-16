@@ -2,15 +2,7 @@ from typing import List
 
 from pydantic import BaseModel
 
-
-class Item(BaseModel):
-    name: str
-    price: float
-    quantity: int
-
-
-class ItemRequest(Item):
-    pass
+from order_api.models.schemas.item import ItemRequest
 
 
 class OrderRequest(BaseModel):

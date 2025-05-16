@@ -8,7 +8,7 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.10,<4.0"
 dependencies = [
-    "fastapi[standard] (>=0.115.12,<0.116.0)"
+    "fastapi[standard] (>=0.115.12,<0.116.0)",
 ]
 
 
@@ -21,6 +21,7 @@ pytest = "^8.3.5"
 pytest-cov = "^6.1.1"
 ruff = "^0.11.9"
 taskipy = "^1.14.1"
+pytest-mock = "^3.14.0"
 
 [tool.ruff]
 line-length = 79
@@ -32,7 +33,7 @@ select = ['I', 'F', 'E', 'W', 'PL', 'PT']
 
 [tool.ruff.format]
 preview = true
-quote-style = 'single'
+quote-style = 'double'
 
 [tool.ruff.lint.per-file-ignores]
 "!src/**.py" = ["PLR6301"]

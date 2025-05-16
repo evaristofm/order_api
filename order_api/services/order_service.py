@@ -1,6 +1,6 @@
 from order_api.models.item import Item
 from order_api.models.order import Order
-from order_api.models.schemas import OrderRequest, OrderResponse
+from order_api.models.schemas.order import OrderRequest, OrderResponse
 from order_api.services.discount_strategies import (
     BlackFridayDiscount,
     DiscountStrategy,
